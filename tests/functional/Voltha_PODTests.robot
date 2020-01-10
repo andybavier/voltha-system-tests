@@ -411,6 +411,7 @@ Delete All Devices and Verify
     # Clear devices from VOLTHA
     Disable Devices In Voltha    Root=true
     Wait Until Keyword Succeeds    ${timeout}    2s    Test Devices Disabled In Voltha    Root=true
+    Sleep    5s
     Delete Devices In Voltha    Root=true
     Wait Until Keyword Succeeds    ${timeout}    2s    Test Empty Device List
 
